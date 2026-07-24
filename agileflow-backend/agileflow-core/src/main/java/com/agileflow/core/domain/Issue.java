@@ -7,9 +7,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.Filter;
-import org.hibernate.annotations.FilterDef;
 import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.annotations.ParamDef;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.type.SqlTypes;
 
@@ -22,7 +20,6 @@ import java.util.List;
 @Table(name = "issues")
 @Data
 @NoArgsConstructor @AllArgsConstructor @Builder
-@FilterDef(name = "tenantFilter", parameters = {@ParamDef(name = "orgId", type = UUID.class)})
 @Filter(name = "tenantFilter", condition = "project_id IN (SELECT p.id FROM projects p WHERE p.org_id = :orgId)")
 public class Issue {
 

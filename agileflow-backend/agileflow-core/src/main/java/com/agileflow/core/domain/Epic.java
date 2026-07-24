@@ -5,8 +5,6 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.Filter;
-import org.hibernate.annotations.FilterDef;
-import org.hibernate.annotations.ParamDef;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDate;
@@ -18,7 +16,6 @@ import java.util.List;
 @Table(name = "epics")
 @Data
 @NoArgsConstructor @AllArgsConstructor @Builder
-@FilterDef(name = "tenantFilter", parameters = {@ParamDef(name = "orgId", type = UUID.class)})
 @Filter(name = "tenantFilter", condition = "project_id IN (SELECT p.id FROM projects p WHERE p.org_id = :orgId)")
 public class Epic {
 
