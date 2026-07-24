@@ -1,0 +1,24 @@
+CREATE TABLE issues (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
+    sprint_id UUID REFERENCES sprints(id) ON DELETE SET NULL,
+    epic_id UUID REFERENCES epics(id) ON DELETE SET NULL,
+    assignee_id UUID REFERENCES users(id) ON DELETE SET NULL,
+    reporter_id UUID NOT NULL REFERENCES users(id) ON DELETE SET NULL,
+    
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    type VARCHAR(50) NOT NULL, -- STORY | BUG | TASK | SUBTASK | EPIC
+    status VARCHAR(50) NOT NULL DEFAULT 'TODO', -- TODO | IN_PROGRESS | IN_REVIEW | DONE
+    priority VARCHAR(50) NOT NULL DEFAULT 'MEDIUM', -- LOWEST | LOW | MEDIUM | HIGH | HIGHEST
+    story_points NUMERIC(5,2),
+    position DOUBLE PRECISION NOT NULL DEFAULT 0,
+    parent_issue_id UUID REFERENCES issues(id) ON DELETE SET NULL,
+    custom_fields JSONB,
+    
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TRIGGER set_timestamp_issues
+BEFORE UPDATE ON issues FOR EACH ROW EXECUTE FUNCTION trigger_set_timestamp();
