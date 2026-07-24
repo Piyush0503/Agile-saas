@@ -7,5 +7,6 @@ com/agileflow/infrastructure/repository/IssueCommentRepository.class
 com/agileflow/infrastructure/repository/IssueActivityRepository.class
 com/agileflow/infrastructure/repository/SprintRepository.class
 com/agileflow/infrastructure/repository/UserRepository.class
+com/agileflow/infrastructure/repository/RefreshTokenRepository.class
 com/agileflow/infrastructure/repository/projections/IssueProjection$AssigneeProjection.class
 com/agileflow/infrastructure/repository/ProjectRepository.class
