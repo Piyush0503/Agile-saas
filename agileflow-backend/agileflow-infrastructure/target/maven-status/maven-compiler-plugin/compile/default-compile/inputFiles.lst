@@ -4,6 +4,7 @@
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-infrastructure/src/main/java/com/agileflow/infrastructure/repository/IssueActivityRepository.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-infrastructure/src/main/java/com/agileflow/infrastructure/repository/SprintRepository.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-infrastructure/src/main/java/com/agileflow/infrastructure/repository/OrgMemberRepository.java
+/home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-infrastructure/src/main/java/com/agileflow/infrastructure/repository/OrgInvitationRepository.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-infrastructure/src/main/java/com/agileflow/infrastructure/repository/UserRepository.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-infrastructure/src/main/java/com/agileflow/infrastructure/repository/IssueCommentRepository.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-infrastructure/src/main/java/com/agileflow/infrastructure/repository/EpicRepository.java

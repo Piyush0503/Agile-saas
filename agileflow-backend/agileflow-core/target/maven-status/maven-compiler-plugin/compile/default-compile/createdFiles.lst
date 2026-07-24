@@ -1,6 +1,8 @@
+com/agileflow/core/domain/OrgInvitation$OrgInvitationBuilder.class
 com/agileflow/core/domain/enums/IssueStatus.class
 com/agileflow/core/domain/Subscription.class
 com/agileflow/core/domain/enums/SprintStatus.class
+com/agileflow/core/domain/OrgInvitation.class
 com/agileflow/core/security/RequiresOrgRole.class
 com/agileflow/core/domain/Issue.class
 com/agileflow/core/domain/OrgMember$OrgMemberId.class

@@ -2,6 +2,7 @@
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-core/src/main/java/com/agileflow/core/domain/package-info.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-core/src/main/java/com/agileflow/core/domain/IssueActivity.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-core/src/main/java/com/agileflow/core/domain/enums/IssueType.java
+/home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-core/src/main/java/com/agileflow/core/domain/OrgInvitation.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-core/src/main/java/com/agileflow/core/security/RequiresOrgRole.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-core/src/main/java/com/agileflow/core/domain/Sprint.java
 /home/rdp/Documents/Piyush/New/agileflow-backend/agileflow-core/src/main/java/com/agileflow/core/domain/enums/OrgRole.java

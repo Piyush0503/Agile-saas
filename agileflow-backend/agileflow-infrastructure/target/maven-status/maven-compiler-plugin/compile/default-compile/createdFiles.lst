@@ -2,6 +2,7 @@ com/agileflow/infrastructure/repository/projections/IssueProjection.class
 com/agileflow/infrastructure/repository/IssueRepository.class
 com/agileflow/infrastructure/repository/EpicRepository.class
 com/agileflow/infrastructure/repository/OrgMemberRepository.class
+com/agileflow/infrastructure/repository/OrgInvitationRepository.class
 com/agileflow/infrastructure/repository/OrganizationRepository.class
 com/agileflow/infrastructure/repository/IssueCommentRepository.class
 com/agileflow/infrastructure/repository/IssueActivityRepository.class
